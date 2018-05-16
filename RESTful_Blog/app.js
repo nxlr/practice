@@ -90,6 +90,20 @@ app.put("/blogs/:id", function(req, res){
     
 });
 
+// DELETE ROUTE
+app.delete("/blogs/:id", function(req, res){
+    // Delete Blog
+    Blog.findByIdAndRemove(req.params.id, function(err){
+        if(err){
+            res.redirect("/blogs");
+        } else {
+            // Redirect somewhere
+            res.redirect("/blogs");
+        }
+    });
+    
+});
+
 process.env.PORT = "3000";
 app.listen(process.env.PORT, process.env.IP, function(){
     console.log("Server is running");
