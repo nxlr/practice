@@ -5,3 +5,7 @@
 #delete {
     display: inline;
 }
+
+.ui.huge.header {
+    text-align: center;
+}
