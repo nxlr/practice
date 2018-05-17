@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/main.css">
+</head>
+<body>
+    <!-- <div class="container"> -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Yelp-Camp</a>
+                </div>
+                <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav justify-content-end d-flex flex-fill">
+                        <% if(!currentUser){ %>
+                            <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/register">Sign Up</a></li>
+                        <% } else { %>
+                            <li class="nav-item"><a class="nav-link" href="#">Signed in as <%= currentUser.username.charAt(0).toUpperCase() + currentUser.username.slice(1) %></a></li>
+                            <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+                        <% } %>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+    <!-- </div> -->
+    
