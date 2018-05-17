@@ -1,0 +1,18 @@
+#index-image {
+    height: 12rem;
+    padding: 0%;
+    
+}
+
+.card img{
+    height: 32rem;
+    padding: 0%;
+}
+
+.container {
+    margin-top: 1rem;
+}
+
+#delete-form {
+    display: inline;
+}
