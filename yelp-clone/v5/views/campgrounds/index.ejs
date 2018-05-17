@@ -12,8 +12,8 @@
     <div class="row text-center" style="display: flex; flex-wrap: wrap;">
 
         <% campgrounds.forEach(function(campground){ %>
-            <div class="col-md-3 col-sm-6">
-                <img class="img-thumbnail" src="<%= campground.image%>" alt="">
+            <div class="card col-md-3 col-sm-6">
+                <img id="index-image" class="img-thumbnail" src="<%= campground.image%>" alt="">
                 <div class="caption">
                     <h4><%= campground.name %></h4>
                 </div>

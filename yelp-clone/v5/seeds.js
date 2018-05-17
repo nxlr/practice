@@ -5,12 +5,12 @@ var Comment = require("./models/comment");
 var data = [
     {
         name: "The French Alps",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTfSN4-S15OImFHh5DhoOgi1Gzpp4_68pekbuiKXj8lwBCQ2oz",
+        image: "https://c.pxhere.com/photos/3b/4a/man_resting_person_cliff_edge_french_alps_rock_nature-1386700.jpg!d",
         description: "Nature, France, Alps, Haute Savoie, Mountain, Wood, Blah Blah Blah Blah Blah Blah "
     },
     {
         name: "The Austrian Alps",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHqVbdKHtZ48TPXZ2VOoFZCmtYKYnJG9rRnmn5k3UK0NX06h9S",
+        image: "https://c1.staticflickr.com/2/1537/24216258061_0f0eb20629_b.jpg",
         description: "Austrian Alps !!! Blah Blah Blah Blah Blah Blah Blah Blah Blah "
     },
     {
