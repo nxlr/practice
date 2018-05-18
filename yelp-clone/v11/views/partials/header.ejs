@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="/stylesheets/main.css">
 </head>
 <body>
-    <!-- <div class="container"> -->
         <nav class="navbar navbar-expand-md navbar-light bg-light">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -31,6 +30,16 @@
                 </div>
             </div>
         </nav>
-        
-    <!-- </div> -->
+        <div class="container">
+            <% if(success && success.length > 0){ %>
+                <div class="alert alert-success" role="alert">
+                    <%= success %>
+                </div>
+            <% } %>
+            <% if(error && error.length > 0) { %>
+                <div class="alert alert-danger" role="alert">
+                    <%= error %>
+                </div>
+            <% } %>
+        </div>
     
