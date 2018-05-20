@@ -51,7 +51,7 @@ app.use("/",authRoutes);
 app.use("/campgrounds",campgroundRoutes);
 app.use("/campgrounds/:id/comments",commentRoutes);
 
-process.env.PORT = "3000";
+//process.env.PORT = "3000";
 app.listen(process.env.PORT, process.env.IP, function(){
     console.log("Yelp-Clone Server started.");
 });
